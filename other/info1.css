@@ -1,0 +1,198 @@
+body {
+  background-color: #ffffe8;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  }
+* {box-sizing: border-box;}
+
+.bg-img {
+  /* The image used */
+  background-image: url("portfolio.jpg");
+
+  min-height: 500px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  
+  /* Needed to position the navbar */
+  position: relative;
+
+}
+
+#nav_sticky{
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  top: 0;
+  background-color:rgba(0, 0, 0, 0.5);
+  padding-bottom:15px;
+}
+/* Position the navbar container inside the image */
+.nav_container {
+  position: relative;
+  padding: 20px;
+  width: auto;
+}
+
+/* The navbar */
+.topnav {
+  position: absolute;
+  left: 10px;
+  overflow: hidden;
+  display: inline;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #ffffe8;
+  padding: 0px 10px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight:bold;
+}
+
+.topnav a:hover {
+  color: #ad8533;
+  cursor: pointer;
+}
+
+.media{
+  position: absolute;
+  right:10px;
+  display: inline;
+}
+.media a {
+  float: right;
+  color: #ffffe8;
+  padding: 0px 0px;
+  margin:0 10px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight:bold;
+}
+
+.media a:hover {
+  cursor: pointer;
+}
+
+.info_container {
+  width: auto;
+  padding: 0px 10px;
+  font-size: 18px;
+}
+
+.pic{
+  float: right;
+}
+
+.pic img{
+  width: 175px;
+  border-radius: 100%;
+}
+
+.info {
+  color: #ffffe8;
+  font-weight:normal;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+.bg-img {
+	min-height: 600px;
+}
+.media {
+    display: inline-block;
+}
+.info_container {
+	margin-top: 75px;
+  	padding: 0 20px;
+  	font-size: 17px;
+}
+.pic{
+	float: none;
+	text-align: center;
+}
+.pic img{
+  	width: 160px;
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+.media {
+    display: inline;
+}
+.info_container {
+	margin-top: 75px;
+  	padding: 0 10px;
+ 	font-size: 17px;
+}
+.pic{
+	float: none;
+	text-align: center;
+}
+.pic img{
+  	width: 160px;
+}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+.bg-img {
+	min-height: 400px;
+}
+.media {
+    display: inline;
+}
+.info_container {
+  	margin-top: 125px;
+  	padding: 0 30px;
+  	font-size: 18px;
+}
+.pic{
+	float: right;
+}
+.pic img{
+  	width: 160px;
+}
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+.info_container {
+  	margin-top: 150px;
+ 	padding: 0 75px;
+}
+.bg-img {
+	min-height: 500px;
+}
+.pic img{
+  	width: 165px;
+  	margin-right:75px; 
+}
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+.info_container {
+  	margin-top: 150px;
+  	padding: 0 150px;
+}
+
+.pic img{
+  	width: 175px;
+  	margin-right:100px; 
+}
+
+}
