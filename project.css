@@ -25,6 +25,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
+  /*background-image: url("images/projects/library.png");*/
   background-color: beige;
   overflow: hidden;
   width: 100%;
